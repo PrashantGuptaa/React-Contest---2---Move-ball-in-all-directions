@@ -16,7 +16,19 @@ const App = () => {
   const renderChoice = () => {
   };
 
-const keyEventHandler = () =>{
+const keyEventHandler = (event) =>{
+if(event.keyCode === 37){
+
+}
+else if(event.keyCode === 38){
+
+}
+else if(event.keyCode === 39){
+
+}
+else if(event.keyCode === 40){
+
+}
 
 }
 
