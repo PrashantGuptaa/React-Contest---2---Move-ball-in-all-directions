@@ -10,10 +10,28 @@ const App = () => {
     top: "0px",
   });
   const reset = () => {};
-  const renderChoice = () => {};
+  const start = () => {
+    setRenderBall(true);
+  };
+  const renderChoice = () => {
+  };
+
+const keyEventHandler = () =>{
+
+}
+
+React.useEffect(()=>{
+  document.addEventListener('keydown', keyEventHandler);
+}
+)
 
   return (
     <div className="playground">
+     {  renderBall ? <div className="ball" style={ballPosition}></div>
+     :  <button onClick={start} className="start">
+          Start
+        </button>
+      }
       <button onClick={reset} className="reset">
         Reset
       </button>
